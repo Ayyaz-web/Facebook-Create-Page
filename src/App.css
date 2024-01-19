@@ -1,79 +1,408 @@
-.App{
-    text-align: center;
-}
-.card{
+.container {
     position: relative;
-    width: 60%;
-    height: 100vh;
-    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    color: black;
+}
+
+body {
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    background-color: rgba(255, 254, 254, 0.8);
+    height: 105vh;
+    display: grid;
+    place-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* All input field  */
+input {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 11px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
     margin-bottom: 10px;
-    margin-top: 1%;
-    background-color:#EB3349;
-    background-size: cover;
-    box-shadow: 5px 10px 5px 10px #fff;
-    padding: 20px;  
+    border: none;
+    outline: none;
+
 }
-.title{
-color: white;
-font-weight: 700;
-font-size: 50px;
+
+
+
+.input {
+    border: 1px solid #ff0000; 
 }
-.search-form{
+
+
+
+
+
+
+
+/* image section  */
+
+img.first{   
+    left: 180px;
+    top: 111px;
+    position: absolute;
+    width: 20px;
+    color: red;
+}
+
+img.second{
+    left: 400px;
+    top: 111px;
+    position: absolute;
+    width: 20px;
+    color: red;
+}
+
+img.third{
+    left: 400px;
+    top:158px;
+    position: absolute;
+    width: 20px;
+    color: red;
+}
+
+img.fourth{
+
+    left: 400px;
+    top: 206px;
+    position: absolute;
+    width: 20px;
+    /* color: red; */
+}
+
+/* input field text  */
+
+/* For First Input  */
+.input-label {
+    position: absolute;
+    left: -160px;
+    top: 97px;
+    color: rgb(77, 255, 0);
+    background-color: rgb(169, 64, 64);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 16px; 
+    margin-right: 10px;
+
+}
+.tri{
+    position:absolute;
+    color: rgb(169, 64, 64);
+    margin-left:8px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(169, 64, 64);
+    transform:rotate(-270deg);
+
+}
+
+.double> h5{
+    color: rgb(255, 255, 255);
+}
+
+/* For First input 2  */
+
+.input-la {
+    position: absolute;
+    left: 231px;
+    top: 155px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(169, 64, 64);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 15px; 
+    margin-right: 10px;
+
+}
+.tr{
+    position:absolute;
+    bottom: 25px;
+    color: rgb(169, 64, 64);
+    margin-left: -130px;
+    margin-bottom: 20px; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(169, 64, 64);
+
+}
+
+
+
+.double> p{
+    color: rgb(255, 255, 255);
+}
+
+ 
+/* For second input  */
+
+
+.input-labe {
+    position: absolute;
+    left: -372px;
+    top: 143px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(169, 64, 64);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 15px; 
+    margin-right: 10px;
+
+}
+.tris{
+    position:absolute;
+    bottom: 35px;
+    color: rgb(169, 64, 64);
+    margin-left:200px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(169, 64, 64);
+    transform:rotate(-270deg);
+
+}
+
+
+
+.single> p{
+    color: rgb(255, 255, 255);
+}
+
+/* for second to 2  */
+
+.paswrd{
+    position: relative;
+}
+.paswrd img{
+      position: absolute;
+      padding-left: 380px;
+      padding-top: 10px;
+}
+
+
+.input-lab {
+    position: absolute;
+    left: -370px;
+    top: 190px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(169, 64, 64);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 15px; 
+    margin-right: 10px;
+
+}
+.trise{
+    position:absolute;
+    color: rgb(169, 64, 64);
+    bottom: 35px;
+    margin-left:74px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgb(169, 64, 64);
+    transform:rotate(-270deg);
+
+}
+
+
+
+.single> p{
+    color: rgb(255, 255, 255);
+}
+
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     margin-top: 10px;
+    
+}
+
+
+.cross {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    font-size: larger;
+    top: 12px;
+    color: #737376;
+}
+
+.head h1 {
+    color: #1c1e21;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+
+.head p {
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.head hr {
+   
+    margin-bottom: 10px;
+    width: calc(100% + 34px); 
+    margin-left: -17px; 
+    margin-right: -17px; 
+}
+
+
+
+.double {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+   
+
 }
-.search-form>input{
-    width: 90%;
-    height: 40px;
-    padding: 5px;
-    border: 1px solid black;
-    background: black;
+
+.double>input {
+    width: 48%;
+}
+
+.single input {
+    width: 100%;
+
+}
+
+
+
+
+.new p {
+    color: #606770;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.pd{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+
+.check {
+    background-color: #606770;
     color: white;
-    border-radius: 10px;
-    margin: 0 auto;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 2px;
+    height: 12px;
+    width: 12px;
+    
+
 }
-button{
-    width: 16%;
-    height: 50px;
-    padding: 5px;
+
+.dob-section {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+.dob-select {
+    width: 100%;
+    border-radius: 4px;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 20px;
+    padding: 0px 20px 0px 8px;
+
+}
+
+
+
+
+.lab {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.cen {
+    display: flex;
+    border: 1px solid #62676b;
+    font-size: 15px;
+    border-radius: 4px;
+
+
+}
+
+
+
+
+.cen>label {
+    width: 100%;
+    border-radius: 4px;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 7px 52px 7px 8px;
+    /* padding: 0 15px 0px 0px; */
+
+
+}
+
+.cen input{
+   
+    margin: 0px 10px 0px 0px;
+    
+}
+
+
+
+.para>p {
+    margin: 11px 0px;
+    color: #777;
+    font-size: 11px;
+    width: 100%;
+}
+
+a {
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px;
+
+}
+
+button {
+    background-color: #00a400;
     border: none;
-    border-radius: 10px;
-    background-color: #000000;
-    font-weight: 400;
+    border-radius: 6px;
+    color: #fff;
     font-size: 18px;
-    color: white;
+    font-weight: 600;
+    height: 36px;
+    padding: 0 62px;
     cursor: pointer;
 }
-button:hover{
-    background-color: #02f81b;
-    color: rgb(0, 0, 0);
-}
-.main-container{
-    width: 50%;
-    margin-left: 190px;
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px 5px #fff;
 
-}
-
-.main-container>h4{
-    font-size: 25px;
-    font-weight: 800;
-}
-h3{
-    color: white;
-}
-h6{
-    color: white;
-    font-size: 16px;
-}
-h2{
-    color: white;
-    font-size: 30px;
+button:hover {
+    background-color: #4e924e;
+    color: rgb(247, 243, 243);
 }
